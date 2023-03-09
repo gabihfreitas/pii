@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        
+        h2 {
+            padding: 10px; margin-top: 270px; text-align: center;
+
+        }
+
+        h3 { padding: 10px; margin-top: 270px; text-align: center;}
+
+        .content {display: flex; justify-content: center; background-color: lightgreen;
+            font-family: Arial, Helvetica, sans-serif;}
+        .login {width: 100%; max-width: 450px;}
+        .form { display: flex; flex-direction: column;}
+        .field { padding: 10px; margin-bottom: 15px;  border: 1px solid black; border-radius: 7px; font-family: Arial, Helvetica, sans-serif; 
+        font-size: 15px;}
+    </style>
+
+</head>
+
+
+<body class = "content">
+
+    <div class = "login"> 
+        <h2> Dados inválidos, tente novamente.</h2>
+        <h3>Faça seu login: </h3>
+        <form class="form" method="POST" action="login.php">
+            <input class="field" name="usuario" placeholder="Digite seu nome de usuário">
+            <input class="field" input type = password name="senha" placeholder="Digite sua senha">
+            <input class = "field" type="submit" value="Pronto!">
+        </form>
+    </div>
+   
+    
+</body>
+</html>
